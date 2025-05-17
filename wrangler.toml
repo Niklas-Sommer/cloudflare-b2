@@ -5,6 +5,10 @@ compatibility_date = "2023-09-04"
 
 main = "index.js"
 
+routes = [
+  { pattern = "cdn.seed3d.io", custom_domain = true }
+]
+
 # Don't put your application key in this file!
 # You should set it as a secret in the Cloudflare dashboard or at the command line:
 # echo "<your b2 application key>" | wrangler secret put B2_APPLICATION_KEY
@@ -54,7 +58,3 @@ RCLONE_DOWNLOAD = "false"
 #    "x-amz-server-side-encryption-customer-key",
 #    "x-amz-server-side-encryption-customer-key-md5"
 #]
-
-routes = [
-  { pattern = "cdn.seed3d.io", custom_domain = true }
-]
